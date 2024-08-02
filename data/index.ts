@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -73,68 +75,89 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Basic Portfolio",
+    des: "Transforming ideas into interactive digital experiences",
+    img: "/p3.png",
+    iconLists: ["/ht.svg", "/cs.svg", "/js.svg"],
+    link: "https://denisruparelportfolio.netlify.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Dflix",
+    des: "Dive into a world of entertainment with Dflix",
+    img: "/p5.png",
+    iconLists: ["/ht.svg", "/cs.svg", "/js.svg", "/tm.svg", "/pm.svg"],
+    link: "https://dflixmovies.netlify.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "textUtils",
+    des: "Effortlessly manipulate and format your text with your textUtils",
+    img: "/p4.png",
+    iconLists: ["/re.svg", "/ht.svg", "/cs.svg", "/js.svg", "/boo.svg"],
+    link: "https://thetextutilze.netlify.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "NotesApp",
+    des: "Write, save, and access your notes effortlessly with NotesApp",
+    img: "/p6.png",
+    iconLists: ["/re.svg", "/md.svg", "/ex.svg", "/nd.svg", "/pm.svg"],
+    link: "https://thetextutilze.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Meetupmingle",
+    des: "Simplify your video conferencing experience with Meetupmingle.",
+    img: "/p1.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://meetupmingle.vercel.app/"
+  },
+  {
+    id: 6,
+    title: "Dbanking",
+    des: "Revolutionizing banking with innovative digital solutions with Dbanking",
+    img: "/p2.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/aw.svg", "/sen.svg"],
+    link: "https://dbanking.vercel.app/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I made so many mistakes in running the company so far, basically any mistake you can think of I probably made. I think, if anything, the Facebook story is a great example of how if you're building a product that people love you can make a lot of mistakes.",
+    name: "Mark Zuckerberg",
+    title: "cofounder and CEO of Facebook",
+    img: "/markz.png"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The best way to prepare [to be a programmer] is to write programs, and to study great programs that other people have written. ",
+    name: "Bill Gates",
+    title: "cofounder and CEO of Microsoft",
+    img: "/billg.png"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Brand is just a perception, and perception will match reality over time. Sometimes it will be ahead, other times it will be behind. But brand is simply a collective impression some have about a product.",
+    name: "Elon Musk",
+    title: "cofounder and CEO of SpaceX & Tesla",
+    img: "/em.png"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "A person who is happy is not because everything is right in his life, He is happy because his attitude towards everything in his life is right.",
+    name: "Sundar Pichai",
+    title: "CEO of Google & Alphabet",
+    img: "/sp.jpg"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
+    name: "Steve Jobs",
+    title: "cofounder of Apple",
+    img: "/sj.png"
   },
 ];
 
@@ -153,9 +176,9 @@ export const companies = [
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Vercel",
+    img: "/vi.svg",
+    nameImg: "/vl.png",
   },
   {
     id: 4,
@@ -174,45 +197,53 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Self Employeed",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    id: 2,
+    title: "Next Js Developer Intern",
+    desc: "Assisted in the development of a web-based platform using Next.js, enhancing interactivity.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp1.svg",
   },
+  // {
+  //   id: 3,
+  //   title: "Freelance App Dev Project",
+  //   desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+  //   className: "md:col-span-2", // change to md:col-span-2
+  //   thumbnail: "/exp3.svg",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/DenisRuparel",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/denis-ruparel-249539243/"
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/insta.svg",
+    link: "https://www.instagram.com/denis_ruparel_/"
+  },
+  {
+    id: 4,
+    img: "/tw.png",
+    link: "https://x.com/DenisRuparel"
   },
 ];

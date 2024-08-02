@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -32,7 +32,8 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 lg:h-[26vh] lg:rounded-3xl p-2"
+                  // className="z-10 absolute b-3 p-2 sm:w-23 w-[25vw] h-[20vh] lg:rounded-3xl lg:h-[25vh]"
                 />
               </div>
 
@@ -66,10 +67,21 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  {/* <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <p className="lg:text-xl md:text-xs text-sm text-purple">
+                      Check Live Site
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </a>
                 </div>
               </div>
             </PinContainer>
